@@ -60,7 +60,8 @@ const NavMenu = ({ isMobile = false }) => {
 
           <a
             href="https://open.spotify.com/playlist/1HHnztnqsuK110DtKT9nX6?si=9605755b60d04087"
-            target={"_blank"}
+            target="_blank"
+            rel="noreferrer"
           >
             <MenuItem>My Spotify Playlist</MenuItem>
           </a>
