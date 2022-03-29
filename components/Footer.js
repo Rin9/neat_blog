@@ -30,6 +30,7 @@ const Footer = () => {
                 "https://open.spotify.com/playlist/1HHnztnqsuK110DtKT9nX6?si=9605755b60d04087"
               }
               target="_blank"
+              rel="noreferrer"
             >
               <IconButton
                 colorScheme="gray.400"
