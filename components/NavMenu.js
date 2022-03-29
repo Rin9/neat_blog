@@ -54,7 +54,7 @@ const NavMenu = ({ isMobile = false }) => {
             About
           </MenuItem>
 
-          <a href={"https://github.com/Rin9"} target="_blank">
+          <a href={"https://github.com/Rin9"} target="_blank" rel="noreferrer">
             <MenuItem>Github</MenuItem>
           </a>
 

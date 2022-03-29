@@ -17,7 +17,11 @@ const Footer = () => {
           </Box>
 
           <Box>
-            <a href={"https://github.com/Rin9"} target="_blank">
+            <a
+              href={"https://github.com/Rin9"}
+              target="_blank"
+              rel="noreferrer"
+            >
               <IconButton
                 colorScheme="gray.400"
                 fontSize={["20px", "30px"]}
