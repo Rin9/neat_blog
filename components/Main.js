@@ -1,8 +1,7 @@
-import { Heading, Text, Divider } from "@chakra-ui/react";
+import { Heading, Text } from "@chakra-ui/react";
 import Post from "./Post";
 
 const Main = ({ posts }) => {
-  console.log(posts[0]);
   return (
     <>
       <Heading as={"h2"} variant="subtitle">
