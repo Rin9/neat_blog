@@ -21,3 +21,37 @@ export const getPosts = async () => {
   const result = await request(graphqlAPI, query);
   return result;
 };
+
+export const getPostDetails = async (slug) => {
+  const query = gql`
+    query GetPostDetails($slug: String!) {
+      post(where: { slug: $slug }) {
+        title
+        excerpt
+        content {
+          markdown
+          text
+          raw
+        }
+        id
+        createdAt
+        publishedAt
+        author {
+          biography
+          name
+          picture {
+            url
+          }
+        }
+        tags
+        coverImage {
+          url
+        }
+      }
+    }
+  `;
+
+  const result = await request(graphqlAPI, query, { slug });
+
+  return result;
+};

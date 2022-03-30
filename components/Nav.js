@@ -47,7 +47,7 @@ const Nav = () => {
         {/* This is the logo */}
         <Link href={"/"} passHref>
           <InnerLink>
-            <Heading as="h1">JW Blog</Heading>
+            <Heading as="h1">Neat Blog</Heading>
           </InnerLink>
         </Link>
         {/* About button */}

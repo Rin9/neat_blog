@@ -26,12 +26,10 @@ const Post = ({ post }) => {
             {post?.title}
           </Heading>
           <Text variant="intro" my="20px">
-            {post.excerpt}
+            {post?.excerpt}
           </Text>
-          <Link href={"/"} passHref>
-            <InnerLink variant={"default"} target={"_blank"}>
-              Read more →
-            </InnerLink>
+          <Link href={`/post/${encodeURIComponent(post?.slug)}`} passHref>
+            <InnerLink variant={"default"}>Read more →</InnerLink>
           </Link>
         </Box>
       </Flex>

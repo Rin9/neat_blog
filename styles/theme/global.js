@@ -32,6 +32,30 @@ const theme = extendTheme({
     Heading: {
       variants: {
         subtitle: { fontFamily: "Titillium Web, monospace", fontSize: "4xl" },
+        postDetailTitle: {
+          fontFamily: "Titillium Web, monospace",
+          fontSize: ["3xl", "6xl"],
+          textAlign: "center",
+        },
+        // these headings are for blog articles
+        heading1: {
+          fontFamily: "Titillium Web, monospace",
+          fontSize: "4xl",
+          marginTop: "40px",
+          marginBottom: "40px",
+        },
+        heading2: {
+          fontFamily: "Titillium Web, monospace",
+          fontSize: "3xl",
+        },
+        heading3: {
+          fontFamily: "Titillium Web, monospace",
+          fontSize: "2xl",
+        },
+        heading4: {
+          fontFamily: "Titillium Web, monospace",
+          fontSize: "xl",
+        },
       },
     },
     Text: {
@@ -47,6 +71,10 @@ const theme = extendTheme({
           fontSize: ["5px", "16px"],
           color: mode("gray.400", "gray.100")(props),
         }),
+        postDetailAuthor: {
+          fontFamily: `Raleway,  ${base.fonts?.body}`,
+          fontWeight: "600",
+        },
       },
     },
     // IconButton: {

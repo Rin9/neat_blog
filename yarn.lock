@@ -623,6 +623,18 @@
   dependencies:
     "@chakra-ui/utils" "1.10.4"
 
+"@contentful/rich-text-react-renderer@^15.12.0":
+  version "15.12.0"
+  resolved "https://registry.yarnpkg.com/@contentful/rich-text-react-renderer/-/rich-text-react-renderer-15.12.0.tgz#0226ca32dc4126ede06c417dc59f0a2464dbd956"
+  integrity sha512-vnmWmVa/paBUHv8wPkcOC0pE8Vc/s+5g9y1UoProy/SDnOs/SAXd2R6EoMM885tk29XyAeF//Lxifo8NL8hBnQ==
+  dependencies:
+    "@contentful/rich-text-types" "^15.12.0"
+
+"@contentful/rich-text-types@^15.12.0":
+  version "15.12.0"
+  resolved "https://registry.yarnpkg.com/@contentful/rich-text-types/-/rich-text-types-15.12.0.tgz#25d51e4c6d353286662c53e038052c999d5c01d0"
+  integrity sha512-PgpNu9X+TteL2P9jNi3nUMvQk/y6fyeFdN18/P1hL8HX5iezFZGskaYNu5rlog4O9yc93XrWfWYfXbuBTE91Kg==
+
 "@ctrl/tinycolor@^3.4.0":
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/@ctrl/tinycolor/-/tinycolor-3.4.0.tgz#c3c5ae543c897caa9c2a68630bed355be5f9990f"
@@ -2290,6 +2302,11 @@ normalize-range@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/normalize-range/-/normalize-range-0.1.2.tgz#2d10c06bdfd312ea9777695a4d28439456b75942"
   integrity sha1-LRDAa9/TEuqXd2laTShDlFa3WUI=
+
+nprogress@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/nprogress/-/nprogress-0.2.0.tgz#cb8f34c53213d895723fcbab907e9422adbcafb1"
+  integrity sha1-y480xTIT2JVyP8urkH6UIq28r7E=
 
 object-assign@^4.1.1:
   version "4.1.1"

@@ -3,7 +3,7 @@ import { SiGithub, SiSpotify } from "react-icons/si";
 
 const Footer = () => {
   return (
-    <Box backgroundColor={"#252f3e"} height="100px">
+    <Box backgroundColor={"#252f3e"} height="100px" mt="30px">
       <Container maxW={"container.xl"} height="100%">
         <Flex
           height="100%"

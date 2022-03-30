@@ -9,10 +9,10 @@ export default function Home({ posts }) {
   return (
     <>
       <Head>
-        <title>My Blog</title>
+        <title>Neat Blog</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Container maxW={"container.xl"}>
+      <Container maxW={"container.xl"} minH="100vh">
         <Nav />
         <Main posts={posts.posts} />
       </Container>
