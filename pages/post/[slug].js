@@ -14,6 +14,7 @@ import {
   HStack,
   Image,
   Divider,
+  Stack,
 } from "@chakra-ui/react";
 // reusable components
 import Nav from "../../components/Nav";
@@ -144,43 +145,47 @@ const PostDetail = ({ data }) => {
             mb={["30px", "50px"]}
           >
             {/* left side: author bio, tags, etc.. */}
-            <VStack
-              divider={<StackDivider borderColor="gray.200" />}
-              spacing={["5", "10"]}
-              align="stretch"
-              minW="200px"
-              mt={["30px", "50px"]}
-              mb="30px"
-            >
-              <Flex direction="row">
-                <Avatar
-                  src={post?.author.picture?.url}
-                  name={post?.author.name}
-                />
-                <Flex ml="10px" direction="column">
-                  <Text variant="postDetailAuthor">{post?.author.name}</Text>
-                  <Text variant="intro">{post?.author.biography}</Text>
+            <Box>
+              <VStack
+                divider={<StackDivider borderColor="gray.200" />}
+                spacing={["5", "10"]}
+                align="flex-start"
+                minW="200px"
+                mt={["30px", "50px"]}
+                mb="30px"
+                pos={["block", "sticky"]}
+                top={["0px", "50px"]}
+              >
+                <Flex direction="row">
+                  <Avatar
+                    src={post?.author.picture?.url}
+                    name={post?.author.name}
+                  />
+                  <Flex ml="10px" direction="column">
+                    <Text variant="postDetailAuthor">{post?.author.name}</Text>
+                    <Text variant="intro">{post?.author.biography}</Text>
+                  </Flex>
                 </Flex>
-              </Flex>
-              <Box>
-                <Text variant="intro">TAGS</Text>
-                <HStack mt="5px">
-                  {post?.tags?.map((tag) => {
-                    return <Tag key={tag}>{tag}</Tag>;
-                  })}
-                </HStack>
-              </Box>
-
-              {width >= 480 && (
                 <Box>
-                  <Link href={"/"} passHref>
-                    <InnerLink variant={"default"}>
-                      ← Back to the blog
-                    </InnerLink>
-                  </Link>
+                  <Text variant="intro">TAGS</Text>
+                  <HStack mt="5px">
+                    {post?.tags?.map((tag) => {
+                      return <Tag key={tag}>{tag}</Tag>;
+                    })}
+                  </HStack>
                 </Box>
-              )}
-            </VStack>
+
+                {width >= 480 && (
+                  <Box>
+                    <Link href={"/"} passHref>
+                      <InnerLink variant={"default"}>
+                        ← Back to the blog
+                      </InnerLink>
+                    </Link>
+                  </Box>
+                )}
+              </VStack>
+            </Box>
             {/* right side: post article*/}
             <VStack maxW="900px" align="center" justify="flex-start">
               <Box maxW="100%" mb="20px">
@@ -191,7 +196,6 @@ const PostDetail = ({ data }) => {
                 {post.content.raw.children.map((typeObj, index) => {
                   // console.log(typeObj, index);
                   const children = typeObj.children.map((item, itemindex) => {
-                    console.log(item);
                     return getContentFragment(itemindex, item.text, item);
                   });
 
